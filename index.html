@@ -1,0 +1,234 @@
+<style>
+
+
+/* start welcome-section and navbar*/
+#welcome-section {
+  
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:left;
+  background-color:#1c1c1c;
+  color:white;
+  width:100vw;
+  height:100vh;
+  font-family: 'Roboto Mono', monospace; 
+}
+
+h1{
+  display:inline-block; 
+  border-bottom:1px solid grey;
+  font-size:60px;
+  margin-left:20vw;
+}
+
+#hola{
+  font-size:25px;
+  margin-left:20vw;
+}
+
+@media only screen and (max-width:400px){
+  
+  h1, #hola{
+    font-size: 30px;
+    margin-left:5vw;
+    border-bottom:none;
+  }
+} 
+
+/*nav style*/
+
+nav{
+  display:flex;
+  position:fixed;
+  flex-direction:column;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100px;
+  top: 0; 
+  left: 0;
+
+}
+
+.nav{
+display:flex;
+position:;
+margin-left:25vw;
+margin-top:54vh;
+flex-direction:column-reverse;
+width: 100px;
+transform: rotate(90deg);  
+
+}
+
+nav a {
+  display: block;
+  padding-top:40px;
+  text-decoration:none;
+  color:white;
+  font-family: 'Roboto Mono', monospace;
+  font-size:40px;
+}
+
+ul{
+  list-style:none;
+}
+
+@media only screen and (max-width:500px){
+  nav a {
+  font-size:12px;
+  padding-top:0;
+  }
+  
+  .nav{
+    margin-top:35px;
+    margin-left: calc(55%);
+    transform:none;    
+  }
+} 
+
+#about:hover{
+  color:#ffda91;
+  font-size:30px;
+}
+
+#work:hover{
+  color:#f7bfb7;
+  font-size:30px;
+  
+}
+
+#contact:hover{
+  color:#78bfaa;
+  font-size:30px;
+}
+
+
+/* end of welcome-section and navbar*/
+
+
+
+.project-all {
+  display: grid;
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+h2{
+ font-family: 'Raleway', sans-serif;
+  font-size:30px;
+  text-align:center; 
+  padding-bottom:50px;
+  padding-top:50px;
+  color:black;
+  
+}
+
+.box-project{
+  position:relative;
+  display:inline-block;
+  text-align:center;
+  max-width:100%;
+  padding-bottom:120px; 
+}
+
+.image {
+ width:35%;
+ margin:30px 50px;
+ padding:50px 15px;
+  background-color:#F7F6F2;
+ 
+}
+
+@media only screen and (max-width: 500px){
+  
+  .image{
+    width:70%;
+    height:70%;
+    margin:30px;
+  }
+}
+
+.button-code{
+display:absolute;
+text-align:center;
+height:10vh;
+  
+}
+
+h6{
+  font-size:30px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#profile-link{
+  display:flex;
+  justify-content:center;
+  color:black;
+  font-family: 'Raleway', sans-serif;
+  font-size:20px;
+  text-decoration:none;
+  width: 150px;
+  height: 25px;
+}
+</style>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fontawesome.com/v6.0/icons/caret-down?s=solid">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+   
+    <nav id="navbar"  class="nav-bar">
+      <ul class="nav">
+        <li><a href="#welcome-section" id="about">ABOUT</a></li>
+        <li><a href="#projects" id="work"> WORK</a></li>
+        <li><a href="#contacts" id="contact">CONTACT</a></li>
+      </ul>
+      </nav>
+     
+   
+  <section id="welcome-section">
+     <p id="hola">HELLO</p>
+      <h1>I'M MICAELA</h1>
+  </section>
+  
+      <div class="project-all">
+      <section id="projects">
+        <h2> these are my projects in code pen</h2>
+   
+        <div class="box-project">
+          
+            <div class="project-tile">
+              <a href="https://codepen.io/micaelalago/pen/oNWpZBO" target="_blank">
+                <img src="https://designwrld.com/wp-content/uploads/2016/08/A-New-Minimal-Geometric-Design-Every-Day-By-DAILY-MINIMAL-06-740x555.jpg" class="image">
+             </a>
+        
+          <a href="https://codepen.io/micaelalago/pen/gOWzboy" target="_blank">
+            <img src="https://designwrld.com/wp-content/uploads/2016/08/A-New-Minimal-Geometric-Design-Every-Day-By-DAILY-MINIMAL-05-740x555.jpg" class="image">
+        </a>
+           
+          <a href="https://codepen.io/micaelalago/pen/WNjMLvv" target="_blank">
+            <img src="https://designwrld.com/wp-content/uploads/2016/08/A-New-Minimal-Geometric-Design-Every-Day-By-DAILY-MINIMAL-07-740x555.jpg" class="image">
+          </a>
+       
+          <a href=" https://codepen.io/micaelalago/pen/vYmpodB" target="_blank">
+            <img src="https://designwrld.com/wp-content/uploads/2016/08/A-New-Minimal-Geometric-Design-Every-Day-By-DAILY-MINIMAL-04-740x555.jpg" class="image">
+          </a>
+        </div>
+     </div>
+    </section>
+   </div> 
+    
+    <div class="button-code" id="contacts">
+    <div><h6> link to my profile in freecodecamp<h6></div>
+    
+    <div><button type="button"><a href="https://www.freecodecamp.org/fcc95c4c46e-7b16-4fb6-9ecf-2f6c024dd358" id="profile-link" target="_blank">freecodecamp</a></button></div>
+    <div>
+  
+    
+  </body>
+    
